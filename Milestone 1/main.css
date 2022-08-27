@@ -1,3 +1,6 @@
+/* Website Desktop version */
+@media screen and (min-width: 800px) {
+
 /* Holds all the Contents */
 .Container{
 
@@ -63,9 +66,88 @@ padding: 10px 20px 10px 20px;
 
 /* Footer */
 
-.Footer{
+.Footer{   
     margin: 0px;
     background-color: black;
     color: white;
 }
 
+}
+
+
+
+/* Moblie Version */
+
+@media screen and (max-width: 800px) {
+
+    /* Holds all the Contents */
+    .Container{
+    
+        background-color: black;
+        margin: 0px;
+    }
+    /*  Navigation bar */
+    .Navbar{
+        background-color: grey;
+        
+    }
+    
+    .Navbar p{
+        font-size: 30px;
+        color: white;
+        padding: 20px 50px 10px 20px;
+        text-align: center;
+    }
+    
+    .Navbar a{
+        color: white;
+        text-decoration: none;
+        font-size: 50px;
+        margin: auto;
+        align: center;
+    }
+    
+    .Navbar a:hover{
+    
+        color:black ;
+    
+    }
+    
+    /* Purpose of the page */
+    
+    .purpose{
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        margin: 20px;
+        
+        
+    }
+    
+    .purpose p{
+    padding: 10px 20px 10px 20px;
+    
+    }
+    
+    .purpose a{
+    
+    }
+    
+    /* Showcase of Projects */
+    .projects{
+        color: white;
+        padding: 40px;
+    }
+    .projects ul{
+        list-style: none;
+    }
+    
+    /* Footer */
+    
+    .Footer{   
+        margin: 0px;
+        background-color: black;
+        color: white;
+    }
+    
+    }
