@@ -2,6 +2,7 @@
 .Container{
 
     background-color: black;
+    margin: 0px;
 }
 /*  Navigation bar */
 .Navbar{
@@ -13,6 +14,7 @@
     font-size: 30px;
     color: white;
     padding: 20px 50px 10px 20px;
+    text-align: center;
 }
 
 .Navbar a{
@@ -21,6 +23,7 @@
     font-size: 50px;
     margin: 30px 50px 75px 50px;
     padding: 10px;
+    align: center;
 }
 
 .Navbar a:hover{
@@ -32,10 +35,17 @@
 /* Purpose of the page */
 
 .purpose{
+    font-size: 20px;
     background-color: black;
     color: white;
     margin: 20px;
     
+    
+}
+
+.purpose p{
+padding: 10px 20px 10px 20px;
+
 }
 
 .purpose a{
@@ -51,4 +61,11 @@
     list-style: none;
 }
 
+/* Footer */
+
+.Footer{
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
 
