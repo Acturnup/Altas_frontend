@@ -1,0 +1,25 @@
+#box{
+    background-color: blue;
+    border-style:solid ;
+    border-width: 0.5rem;
+    border-color: green ;
+    margin:auto ;
+    padding: 2rem;
+    min-width: 200px;
+    max-width: 500px;
+    width: 20rem;
+    box-sizing: border-box;
+
+}
+/* box-sizing: Border-box shrink to the 500px width overall */
+#frist-button{
+    background-color: black;
+    color: white;
+}
+
+#frist-button:hover {
+
+    background-color: white;
+    color: black;
+
+}
