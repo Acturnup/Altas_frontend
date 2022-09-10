@@ -66,7 +66,7 @@ for (const item of myArray){
 }
 //??
 
-for (const item in myArray){
+for (const key in myArray){
     console.log(`key:${key}`);
     console.log(`value:${classroom[key]}`);
     
