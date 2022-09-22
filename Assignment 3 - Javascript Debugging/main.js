@@ -42,6 +42,6 @@ function quiz(){
             // get rid of ' and replace with ` so that the ${score} & ${totalQuestion are recongized} #10
             // fixed the indention to be aligned with the if statement #11
         }
-		if 
+		
 	}
 }       // in bracket to close off the function quiz at the end so that everything runs #12
