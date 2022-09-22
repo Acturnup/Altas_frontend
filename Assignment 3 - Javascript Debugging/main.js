@@ -29,19 +29,19 @@ function quiz(){
 		question = quiz_questions[num];       // change the word count to num #8
         document.write(quiz_questions[num]); // show question  ??? 
 		answer = prompt(question);
-		if (answer === quiz_answers[num]) { 
+		if (answer == quiz_answers[num]) { 
 			score++; // add + to make ++ to make sure this is counting up #9
 			alert("Correct!");
 		} else {
 			alert("Wrong");
 		}
-		num++;
-		if (num = totalQuestion) 
+		if (num == totalQuestion) 
         {
 			num = 0;
             document.write(`<p>You got ${score} out of ${totalQuestion} questions correct.</p>`); 
             // get rid of ' and replace with ` so that the ${score} & ${totalQuestion are recongized} #10
             // fixed the indention to be aligned with the if statement #11
         }
+		if 
 	}
 }       // in bracket to close off the function quiz at the end so that everything runs #12
