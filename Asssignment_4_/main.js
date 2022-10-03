@@ -1,60 +1,79 @@
+/*
+Fetch (url)
+.then (repsone => repsone.json())
+.then(json => doYourthing(json))
+.catch(e => console.error(e))
+*/
 
-const apiURL ='https://jsonplaceholder.typicode.com'; // creates short cut
-async function fetchPosts(){ //returns a promise
-    try{ // add try because it is throwing an error
-    const response =await fetch(`${apiURL}/posts`); // responses to posts
-        
+// console.log('hello!');
+// const request = new Request ('https://meowfacts.herokuapp.com/')
+// new request 
+/*
 
-    if (!response.ok){ // if not okay send a error
-        throw new Error(`Failed to fetch post: ${response.status}`) //throwing error
-    }
+*/
+
+// Dont really need this 
+// class UrlBuilder{
+//     constructor(base){
+//         this.base = base;
+//         this.params = {};
+//     }
+
+//     addParam(key,value){
+//         this.params[key] = value;
+//     }
+
+//     build(){
+//         let url = this.base;
+//         let counter = 0;
+
+//         for (const key in this.params){
+//             if(counter === 0){
+
+//             url += '?';
+//         }
+//         else{
+//             url += '&';
+//             }
+//             //consdensed version 
+//             url += counter === 0 ? '?': '&';
+//             url += key;
+//             url += '=';
+//             url += this.params[key];
+//             counter++;
+//         }
+
+//         return url;
+//     }
+// }
+
+// const meowfactsUrlBuilder = new UrlBuilder('https://meowfacts.herouapp.com/')
+// meowfactsUrlBuilder.addParam('count', '4');
+// const meowfactsUrl = meowfactsUrlBuilder.build();
+
+// fetch('meowfactsUrl',{
 
 
-        return await response.json(); // return repsonse
-} catch(e){ // catch error if after it is thrown 
-    console.log(e); // says the error in console
-}
+// CORS ERRORS MEANS WE CANT USE THE API 
 
-}
-
-function listsPosts(postContainerElementId){ // function for listposts
-    const postContainerElement= document.getElementById(postContainerElementId); // creates const that gets the 
-    // element by ID connected as a parameter for the function 
-
-    if(!postContainerElement){ // if not the const postContainerElement it will return;
-        return;
-    }
-
-    fetchPosts() // uses the function fetch post runs it and if not post says in the innerHTML not post fetched
-    .then(posts =>{
-        if(!posts){
-            postContainerElement.innerHTML = 'No posts fetched.';
-            return;
-        }
-                    // creates post 
-        for(const post of posts){
-            postContainerElement.appendChild(postElement(post)); // postelement is fucntion and post is a function parameter 
-
-        }
-
-
-    }) 
-    // catches error and says it 
-    .catch(e => {
-    console.log(e);
+fetch('https://www.fishwatch.gov/api/species',{
+    method: 'GET',
+    headers: {'Content-Type':'application/json'}
+})
+    .then((response) =>{
+        // console.log(response)
+        return response.json();
     })
-}
+    .then((json)=>{
+        // console.log(json);
+        // console.log(json.data[0]);
+        for (const fishwatch of json.data){
+            const paragraph =  document.createElement('p');
+            paragraph.innerText =fishwatch;
+            document.body.appendChild(paragraph);
+        }
+    })
+    .catch((error)=>{
+        console.error(error);
+    });
 
-function postElement(post){ // creates function and parameter
-    const anchorElement = document.createElement('a'); //creating texts for link
-    anchorElement.setAttribute('href',`${apiURL}/posts/${post.id}`); //calling post form website and calling the ID , making a link 
-    anchorElement.setAttribute('target', '_blank') // open in new tab
-    anchorElement.innerText = post.title; // post the title of the TEXT and adds it into the innerHTML
-
-    const postTitleElement = document.createElement('h3'); // create h3
-    postTitleElement.appendChild(anchorElement); // uses  new created element 'h3' and appeneds a child which calls the anchorelement 
-                                                    // basically making sure it is using the attributes of anchorelement
-
-    return postTitleElement; // returns the h3 element
-
-}
