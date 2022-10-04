@@ -14,9 +14,6 @@ function getRandomDog() {
 }
 
 
-
-
-
 		// ANOTHER WAY TO DO THIS
 		// .then(res => res.json())
 		// .then(data => {

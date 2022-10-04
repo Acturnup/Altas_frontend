@@ -1,0 +1,117 @@
+html
+{
+
+}
+body
+{
+
+}
+img
+{
+    width:80px;
+    height:80px;
+}
+nav
+{
+    border:0;
+    margin: 0;
+    padding:20px 40px 20px 40px;
+    background-color:  rgb(207, 184, 124);
+    transition-duration: 75ms;
+    transition-timing-function: ease-in;
+    color: black;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height:80px;
+}
+
+nav a
+{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+}
+
+nav a:hover{
+    color: black;
+    /* transform: scale(1.5);  */
+    /* Doesnt work idk why */
+    font-size: 70px;
+
+}
+
+.nav-spacing{
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 30px;
+   } 
+.feature {
+    padding:20px;
+    background-color: #000;
+    color: white;
+    height:200px;
+    flex-direction: row;
+    display: flex;
+
+}
+
+ol{
+    margin: 0;
+}
+.List{
+background-color: #000;
+padding: 20px;
+font-size: 50px;
+
+}
+
+.List a{
+    text-decoration: none;
+    color: darkorange;
+    padding:10px;
+}
+
+.List p {
+    color: rgb(207, 184, 124);
+    font-size: 30px;
+}
+
+.Container{
+    /* flex:justify-center;
+    w-full m-0 bg-slate-600 */
+}
+
+.Text_1{
+    /* flex flex-col m-10 p-16 text-white justify-center text-center  */
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+}
+.Text_2{
+    /* flex flex-col m-10 p-16 text-white justify-center text-center  */
+    flex-direction: column;
+    display: flex;
+    margin: 20px;
+}
+.Footer_1{
+    /* text-center bg-slate-600 p-[2.1rem] text-white */
+    text-align: center;
+    background-color: rgb(207, 184, 124);
+    color:black;
+    padding: 20px;
+
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+.map_container{
+    padding:20px;
+}

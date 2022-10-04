@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Project Events CU</title>
+
+        <!-- Custom Style -->
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+    <body>
+        <nav class="nav-bar">
+            <div class="image">
+                <img src="cu_logo.png" alt="image_AlexChan">
+            </div>
+
+            <div class="nav-spacing">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-spacing">
+                <a href="EventPage.html">Events</a>
+            </div>
+            <div class="nav-spacing">
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    <section>
+        <!-- Container -->
+        <div class="Container">
+            <div class="feature">
+                <div class="Text_1">
+                    <H1>Welcome,</H1>
+                        <p>
+                            this is the map!
+                        </p>
+                </div>
+
+                <div class="Text_2"> 
+                    <img src="chess-4.jpg" alt="image" style="height:100px; width:150px;">
+                    <p>PlaceHolder for the map!</p>
+                </div>
+
+            </div>
+            <div class="map_container">
+                <div id="map">
+    
+                </div>
+    
+            </div>
+            
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="Footer_1">
+            <p>
+              @Colorado University Map 2022 | <a href="mailto:alch5804@gmail.com"><u>Contact via email for support </u></a>
+            </p>
+      
+          </div>
+    </footer>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <script src="main.js"></script>
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWN0dXJudXAiLCJhIjoiY2w4dXNrZDNtMDZ5cjN2bzRpbjU4b2d3bCJ9.PUt-fBuRNwIbI1bT40APaQ';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center:[-105.2670,40.0040], //longitude, lattitude
+          zoom: 14
+        });
+      </script>
+
+    </body>
+</html>
