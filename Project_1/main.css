@@ -35,9 +35,9 @@ nav a
 
 nav a:hover{
     color: black;
-    /* transform: scale(1.5);  */
+    transform: scale(1.5); 
     /* Doesnt work idk why */
-    font-size: 70px;
+    /* font-size: 70px; */
 
 }
 
@@ -114,4 +114,14 @@ font-size: 50px;
 }
 .map_container{
     padding:20px;
+}
+
+.calendar_container{
+    padding: 20px;
+}
+#calendar{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid orange;
 }

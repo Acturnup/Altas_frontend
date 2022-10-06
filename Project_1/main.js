@@ -7,4 +7,21 @@ var map = new mapboxgl.Map({
 });
 
 
-    
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      googleCalendarApiKey: 'AIzaSyA5fU5pCV_l64rOorFztTWA3I7Fczuc5oI',
+      eventSources: [
+        {
+          googleCalendarId: 'alch5804@colorado.edu'
+        },
+        {
+          googleCalendarId: 'alch5804@colorado.edu',
+          className: 'nice-event'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
