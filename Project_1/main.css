@@ -80,6 +80,10 @@ font-size: 50px;
     font-size: 30px;
 }
 
+.List h6 {
+    color: white;
+}
+
 .Container{
     /* flex:justify-center;
     w-full m-0 bg-slate-600 */
@@ -125,3 +129,5 @@ font-size: 50px;
     border-radius: 10px;
     border: 1px solid orange;
 }
+
+

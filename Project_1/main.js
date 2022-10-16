@@ -25,3 +25,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calendar.render();
   });
+// Display 
+  function myFunction() {
+    var x = document.getElementById("Social");
+    
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+  }
+
+  function myFunction1() {
+    var x = document.getElementById("SportClub");
+    
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+  }
+  function myFunction2() {
+    var x = document.getElementById("Enviormental");
+    
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+  }
