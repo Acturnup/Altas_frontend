@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "build": "npx parcel build index.html",
     "dev": "npx parcel index.html"
   },
   "dependencies": {
