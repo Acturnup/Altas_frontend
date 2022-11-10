@@ -2,7 +2,6 @@
   "name": "11-3-2022",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
   "scripts": {
     "build": "npx parcel build index.html",
     "dev": "npx parcel index.html"
